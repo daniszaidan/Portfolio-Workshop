@@ -1,5 +1,5 @@
 *{
-    /* border: 1px solid black !important; */
+    border: 1px solid black !important;
     margin: 0;
     padding: 0;  
     box-sizing: border-box;
@@ -101,3 +101,63 @@ body, h1, h2, h3, h4, h5, a, p, button{
     font-size: 60px;
 }
 /* end of section about */
+
+/* start of section portfolio */
+#section-portfolio{
+    width: 100%;
+    height: auto;
+    padding: 100px 70px;
+}
+#section-portfolio .title-center{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: 500;
+}
+#section-portfolio .row{
+    display: table;
+    clear: both;
+    width: 100%;
+}
+#section-portfolio .column-6{
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+#section-portfolio .column-6 a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#section-portfolio .column-6 .card{
+    width: 100%;
+    height: 250px;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#section-portfolio .column-6 .card:hover .overlay{
+    opacity: 1;
+}
+#section-portfolio .column-6 .card img{
+    width: 100%;
+    height: auto;
+}
+#section-portfolio .column-6 .card .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    transition: all .3s;
+    opacity: 0;
+}
+#section-portfolio .column-6 .card .overlay p{
+    color: white;
+}
+/* end of section portfolio */
